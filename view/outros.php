@@ -24,7 +24,7 @@ include_once ('../connection.php');
                     <label for="setor">Setor</label>
                 </div>
                 <div class="col-9">
-                    <input type="text" id="setor" name="setor" class="form-control" required>
+                    <input type="text" id="setor" name="setor" class="form-control">
                 </div>
             </div>
             <div class="row py-2">
