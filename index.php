@@ -28,7 +28,6 @@
         border: 1px black solid;
         justify-content: center;
     }
-
 </style>
 
 <style type="text/css">
@@ -46,12 +45,12 @@
     }
 </style>
 
-<body style="background-color: rgb(0,200,0);">
+<body style="background-color:white">
     <div class="container">
         <div class="row py-2">
             <div class="col">
                 <header>
-                    <div id="data-hora"></div>
+                    <strong> <div id="data-hora" style="color:RGB(0,191,0)"> </div> </strong>
                     <script>
                         const zeroFill = n => {
                             return ('0' + n).slice(-2);
@@ -75,23 +74,29 @@
     </div>
     </div>
     <center>
-        <h2> SCI </h2>
+        <h2 style="color:RGB(0,191,0)" style="font-family:Calibri, Calibri Bold"> SCI </h2>
         <hr>
     </center>
     <center>
-        <h3> Qual setor você deseja acessar? </h4>
+        <h3 style="color:RGB(0,191,0)" style="font-family: Calibri"> Qual setor você deseja acessar? </h3>
     </center>
     <hr>
+
     <div class="container" id="setor">
         <div class="child"> <a href="view/gabinete.php"> <img src="img/gabinete_icon.png" width="225" height="187.5"> </a> </div>
         <div class="child"> <a href="view/cegaf.php"> <img src="img/cegaf_icon.png" width="225" height="187.5"> </a> </div>
-        <div class="child"> <a href="view/cedea.php"><img src="img/cedea_icon.png" width="225" height="187.5"> </a> </div>
+        <div class="child"> <a href="view/cedea.php"> <img src="img/cedea_icon.png" width="225" height="187.5"> </a> </div>
         <div class="child"> <a href="view/cecom.php"> <img src="img/cecom_icon.png" width="225" height="187.5"> </a> </div>
     </div>
     <div class="container" id="setor">
         <div class="child"> <a href="view/rh.php"> <img src="img/rh_icon.png" width="225" height="187.5"> </a> </div>
         <div class="child"> <a href="view/ti.php"> <img src="img/ti_icon.png" width="225" height="187.5"> </a> </div>
         <div class="child"> <a href="view/outros.php"> <img src="img/outros_icon.png" width="225" height="187.5"> </a> </div>
+    </div>
+    <div>
+        <a href="admView/tudo.php">
+            <input type="button" value="oi">
+        </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
