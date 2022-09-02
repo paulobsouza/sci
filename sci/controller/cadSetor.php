@@ -1,0 +1,9 @@
+<?php
+    include "../connection.php";
+
+    $setor = filter_input(INPUT_POST, 'setor');
+    $usuario = filter_input(INPUT_POST, 'usuario');
+    $sql = "INSERT INTO tb_setor(set_nome, set_pessoas) VALUES ('$setor','$usuario')";
+    $executar = mysqli_query($connection, $sql);
+    header("location:../index.php");
+?>
