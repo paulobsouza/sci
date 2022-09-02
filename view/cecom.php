@@ -18,7 +18,7 @@ include_once('../connection.php');
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <label for="nome">Nome</label>
+                <label for="nome"> Nome </label>
             </div>
             <div class="col-6">
                 <select name="nome" class="form-select">
